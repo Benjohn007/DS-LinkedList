@@ -10,8 +10,8 @@ namespace LinkedList
     public class SortedLinkedListNode<T>
     {
         public T data { get; set; }
-        public SortedLinkedListNode<T> next { get; set; }
-        public SortedLinkedListNode<T> prev { get; set; }
+        public SortedLinkedListNode<T> Next { get; set; }
+        public SortedLinkedListNode<T> Prev { get; set; }
         public SortedLinkedListNode(T value) 
         {
             data = value;
@@ -35,15 +35,15 @@ namespace LinkedList
             else if(Head.data.Equals(value).CompareTo(value) >= 0) 
             {
                 SortedLinkedListNode<T> newHead = new(value);
-                newHead.next = Head;
-                Head.prev = newHead;
+                newHead.Next = Head;
+                Head.Prev = newHead;
                 Head = newHead;
             }
             else if(Tail.data.Equals(value).CompareTo(value) < 0)
             {
                 SortedLinkedListNode<T> newTail = new(value);
-                newTail.prev = Tail;
-                Tail.next = newTail;
+                newTail.Prev = Tail;
+                Tail.Next = newTail;
                 Tail = newTail;
             }
             else
@@ -51,14 +51,14 @@ namespace LinkedList
                 SortedLinkedListNode<T> insertBefore = Head;
                 while(insertBefore.data.Equals(value).CompareTo(value) <0) 
                 {
-                    insertBefore = insertBefore.next;
+                    insertBefore = insertBefore.Next;
                 }
 
                 SortedLinkedListNode<T> toInsert = new(value);
-                toInsert.next = insertBefore;
-                toInsert.prev = insertBefore.prev;
-                insertBefore.prev.next = toInsert;
-                insertBefore.prev = toInsert;
+                toInsert.Next = insertBefore;
+                toInsert.Prev = insertBefore.Prev;
+                insertBefore.Prev.Next = toInsert;
+                insertBefore.Prev = toInsert;
             }
             Count++;
         }

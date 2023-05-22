@@ -101,7 +101,7 @@ namespace Node
             }
 
         }
-
+        
         public void Traverse()
         {
             Console.WriteLine("\nFirst " + this.First.Data);

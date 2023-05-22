@@ -65,7 +65,7 @@ namespace StackQueueDeque
         private DoublyLinkedListNode<T> Find(T value)
         {
             DoublyLinkedListNode<T>? current = Head;
-
+            
             while(current != null)
             {
                 if(current.Value.Equals(value)) return current;
@@ -78,7 +78,9 @@ namespace StackQueueDeque
 
         public bool Contains(T value)
         {
-            return Find(value) != null;
+            //return Find(value) != null;
+            if(value.Equals( Find(value))) return true;
+            return false;
         }
         
         public bool Remove(T item)
