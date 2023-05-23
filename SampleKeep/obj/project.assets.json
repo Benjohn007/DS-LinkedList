@@ -14,9 +14,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Deca\\source\\repos\\LinkedLisst\\SampleKeep\\SampleKeep.csproj",
+      "projectUniqueName": "C:\\Users\\Deca\\source\\repos\\LinkedLisst\\LinkedLisst\\Custom.csproj",
       "projectName": "SampleKeep",
-      "projectPath": "C:\\Users\\Deca\\source\\repos\\LinkedLisst\\SampleKeep\\SampleKeep.csproj",
+      "projectPath": "C:\\Users\\Deca\\source\\repos\\LinkedLisst\\LinkedLisst\\Custom.csproj",
       "packagesPath": "C:\\Users\\Deca\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Deca\\source\\repos\\LinkedLisst\\SampleKeep\\obj\\",
       "projectStyle": "PackageReference",
